@@ -11,4 +11,4 @@ console.log(users)
 
 users.Firstname = 'Mohammad';
 
-console.log('Hej jeg hedder ${users.Firstname} ')
+console.log(`Hej mig navn er ${users.Firstname}${users.Lastname} `)
