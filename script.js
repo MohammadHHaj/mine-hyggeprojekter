@@ -4,3 +4,11 @@ console.log(users.Firstname)
 console.log('Hej')
 
 users.Firstname = 'Mathias';
+
+console.log(users.Firstname)
+
+console.log(users)
+
+users.Firstname = 'Mohammad';
+
+console.log('Hej jeg hedder ${users.Firstname} ')
