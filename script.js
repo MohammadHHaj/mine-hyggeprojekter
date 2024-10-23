@@ -1,5 +1,7 @@
-let users = {Firstname: 'Mohammad', Lastname: 'Haj', Age: 20, Height: 185, Wight: 88}, 
-{Firstname: 'Mehdi', Lastname: 'Hej', Age: 21, Height: 190, Wight: 19};
+let users = {1: {Firstname: 'Mohammad', Lastname: 'Haj', Age: 20, Height: 185, Weight: 88}, 
+    2: {Firstname: 'Mehdi', Lastname: 'Hej', Age: 21, Height: 190, Weight: 190}}
+
+
 console.log(users.Firstname)
 
 console.log('Hej')
