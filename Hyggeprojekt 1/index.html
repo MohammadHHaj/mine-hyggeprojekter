@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaffe & Te Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Produkt Oversigt</h1>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Søg efter produkter...">
+            <button class="sort-btn" id="sortPriceLow">Pris: Lav til Høj</button>
+            <button class="sort-btn" id="sortPriceHigh">Pris: Høj til Lav</button>
+        </div>
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Kategori</th>
+                    <th>Produktnavn</th>
+                    <th>Pris</th>
+                    <th>Beskrivelse</th>
+                    <th>Lager Status</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody id="productTableBody">
+                <!-- Produkter vil blive indsat her via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

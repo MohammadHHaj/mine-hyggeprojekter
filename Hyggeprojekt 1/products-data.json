@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Coffee",
+      "price": 39,
+      "category": "Kaffe",
+      "description": "En blød og rund filterkaffe med noter af chokolade",
+      "inStock": true,
+      "rating": 5,
+      "image": "coffee-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Espresso Supreme",
+      "price": 45,
+      "category": "Kaffe",
+      "description": "Intens espresso med en fyldig crema",
+      "inStock": true,
+      "rating": 3,
+      "image": "coffee-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Vanilla Latte",
+      "price": 42,
+      "category": "Kaffe",
+      "description": "Cremet latte med et strejf af vanilje",
+      "inStock": false,
+      "rating": 4,
+      "image": "coffee-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chai Tea",
+      "price": 35,
+      "category": "Te",
+      "description": "Krydret chai te med mælk",
+      "inStock": true,
+      "rating": 2,
+      "image": "tea-1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Green Matcha",
+      "price": 48,
+      "category": "Te",
+      "description": "Japansk matcha te af højeste kvalitet",
+      "inStock": false,
+      "rating": 4,
+      "image": "tea-2.jpg"
+    }
+  ]
+}

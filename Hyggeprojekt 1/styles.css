@@ -1,0 +1,184 @@
+/* Grundlæggende stilarter for hele siden */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f4e3; /* Lys beige baggrund */
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+/* Container til at indkapsle indholdet */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 30px; 
+    background-color: #ffffff; 
+    border-radius: 15px; /* Mere rundede hjørner */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Dybere skygge for dybde */
+}
+
+/* Hovedoverskrift */
+h1 {
+    text-align: center; 
+    color: #6f4c3e; 
+    font-size: 3em; /* Større skrifttype */
+    margin-bottom: 30px; /* Mere afstand under overskriften */
+    animation: fadeIn 1s ease; 
+}
+
+/* Stile til kontrolpanelet (søgning og knapper) */
+.controls {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; /* Vertikal centrering af elementer */
+    margin-bottom: 30px; 
+}
+
+/* Stile til søgefeltet */
+#searchInput {
+    width: 70%; 
+    padding: 15px; /* Mere indvendig plads */
+    border: 1px solid #ddd; 
+    border-radius: 10px; /* Mere rundede kanter */
+    font-size: 1.1em; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+/* Ændrer grænsen og tilføjer skygge, når søgefeltet er i fokus */
+#searchInput:focus {
+    border-color: #6f4c3e; 
+    box-shadow: 0 0 5px rgba(111, 76, 62, 0.5); 
+}
+
+/* Stile til sorteringsknapper */
+.sort-btn {
+    background-color: #6f4c3e; 
+    color: #fff; 
+    border: none; 
+    border-radius: 10px; /* Mere rundede kanter */
+    padding: 15px 20px; /* Mere indvendig plads */
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+    font-size: 1.1em; 
+}
+
+/* Ændrer knapfarven og tilføjer skala-effekt, når man holder musen over den */
+.sort-btn:hover {
+    background-color: #5a3b30; 
+    transform: scale(1.05); 
+}
+
+/* Tabelstile */
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    animation: slideIn 0.5s ease; 
+}
+
+/* Cellestile */
+th, td {
+    padding: 15px; /* Mere indvendig plads */
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Overskriftcelle stil */
+th {
+    background-color: #f2e8d5; 
+    color: #6f4c3e; 
+    font-weight: bold; 
+}
+
+/* Almindelige celler */
+td {
+    background-color: #fff; 
+}
+
+/* Stile for produkter på lager */
+.in-stock {
+    background-color: #dff0d8; 
+}
+
+/* Stile for produkter ikke på lager */
+.out-of-stock {
+    background-color: #f2dede; 
+}
+
+/* Stile for rating */
+.rating {
+    font-size: 1.5em; /* Større skrift til rating */
+}
+
+/* Animation for fade-in effekt */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+/* Animation for slide-in effekt */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); 
+        opacity: 0; 
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+/* Mobil responsivitet */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column; 
+        align-items: flex-start; /* Juster elementer til venstre */
+    }
+
+    #searchInput {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .sort-btn {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    table {
+        font-size: 0.9em; 
+    }
+}
+
+/* Animeret boks */
+.box {
+    display: none;
+    background-color: #fff;
+    border: 2px dashed #ff6a00;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    animation: pop 0.5s ease forwards;
+}
+
+/* Animation ved åben */
+@keyframes pop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Vis boksen når knappen klikkes */
+.box.active {
+    display: block;
+}
